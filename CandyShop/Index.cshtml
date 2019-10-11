@@ -1,0 +1,42 @@
+﻿@page
+@model candyshop.Pages.CandyShop.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cshop[0].CSstyle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cshop[0].CSlocation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Cshop) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CSstyle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CSlocation)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.CSID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.CSID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.CSID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

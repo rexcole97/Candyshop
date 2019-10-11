@@ -1,0 +1,48 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    
+    
+}
+    <style>
+        body
+        {
+            background-color:deepskyblue
+
+        }
+        img.ff{
+            height:400px;
+            width:100px;
+        }
+        /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    </style>
+    <button><a href="Candy">content</a></button>
+    <button><a href="CandyShop">content</a></button>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<section class="row">
+    <section class="column">
+        <img src="https://cdn.24.co.za/files/Cms/General/d/2941/ef3c8542ac3149f984838a279df801e6.jpg" alt="Alternate Text" />
+    </section>
+    <section class="column">
+        <img src="http://raredelights.com/wp-content/uploads/2011/07/Delafee.jpg" alt="Alternate Text" />
+    </section>
+    <section class="column">
+        <img src="http://1.bp.blogspot.com/-2RogX51-umM/TeaLgyy5YxI/AAAAAAAABbw/0KJOu76OscQ/w1200-h630-p-k-no-nu/Most%2BExpensive%2BCandy%2B-%2BEmerging%2BMagazine%2BNews%2BGroups.jpg" alt="Alternate Text" />
+    </section>
+</section>
